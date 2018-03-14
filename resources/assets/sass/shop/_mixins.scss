@@ -1,0 +1,28 @@
+// Mixins
+@mixin transition-all() {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+// Font Mixins
+@mixin body-font {
+  // font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  // font-family: 'Railway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  // font-family: 'Railway';
+  // font-family: 'Indie Flower', cursive;
+  //font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+// breadcrumbs
+@mixin breadcrumb-active-color {
+  font-weight: 600;
+  color: $breadcrumb-active-color;
+}

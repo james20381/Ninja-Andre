@@ -1,0 +1,16 @@
+.breadcrumbs {
+padding-top: 5rem;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+.breadcrumb-item {
+  padding-top: .4rem;
+
+  &.active {
+    @include breadcrumb-active-color;
+  }
+}

@@ -1,0 +1,84 @@
+// Styling for the navbar
+#mainNav {
+  border-bottom: 1px solid fade-out($gray-900, .9);
+  background-color: $white;
+  @include  body-font;
+  @include transition-all;
+  .navbar-brand {
+    color: $black;
+    &:focus {
+      color: $black;
+    }
+    &:hover {
+      color: lighten($black, 50%);
+    }
+  }
+  .navbar-nav {
+    > li.nav-item {
+       > a.nav-link,
+      > a.nav-link:focus {
+        font-size: .9rem;
+        color: $black;
+        &:hover {
+          color: lighten($black, 50%);
+        }
+        &.active {
+          color: lighten($black, 50%);
+          background-color: $white;
+          &:hover {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    border-color: transparent;
+    background-color: $white;
+    .navbar-brand {
+      // color: fade-out($white, .3);
+      // font-size: 1.5rem;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $black;
+      &:focus {
+        color: $black;
+      }
+      &:hover {
+        color: lighten($black, 50%);
+      }
+    }
+    .navbar-nav > li.nav-item > a.nav-link {
+      padding: .735rem 1rem;
+    }
+    .navbar-nav > li.nav-item > a.nav-link,
+    .navbar-nav > li.nav-item > a.nav-link:focus {
+      // color: fade-out($white, .3);
+      // font-size: 1.2rem;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: $black;
+      &:hover {
+        color: lighten($black, 50%);
+      }
+    }
+    // &.navbar-shrink {
+    //   border-bottom: 1px solid fade-out($gray-900, .9);
+    //   background-color: $white;
+    //   .navbar-brand {
+    //     color: $primary;
+    //     &:focus,
+    //     &:hover {
+    //       color: darken($primary, .1);
+    //     }
+    //   }
+    //   .navbar-nav > li.nav-item > a.nav-link,
+    //   .navbar-nav > li.nav-item > a.nav-link:focus {
+    //     color: $gray-900;
+    //     &:hover {
+    //       color: $primary;
+    //     }
+    //   }
+    // }
+  }
+}

@@ -1,0 +1,33 @@
+article {
+  height: 80vh;
+  padding-top: 6rem;
+
+.border-wide {
+  border: 3px solid yellow;
+}
+
+.product-info {
+  text-align: center;
+}
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 8rem;
+
+    .product-info {
+      text-align: left;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+    }
+
+  }
+}

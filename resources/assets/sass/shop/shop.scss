@@ -1,0 +1,25 @@
+// Fonts
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// @import url('https://fonts.googleapis.com/css?family=Lato');
+//@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+//@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+// Variables
+@import "variables";
+@import "mixins.scss";
+
+// Font-Awesome 4.7.0
+@import "node_modules/font-awesome/scss/font-awesome";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Shop
+@import "global.scss";
+@import "breadcrumbs.scss";
+@import "navbar.scss";
+@import "footer.scss";
+@import "bootstrap-overrides.scss";
+@import "product.scss";
+@import "home.scss"
