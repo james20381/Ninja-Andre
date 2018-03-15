@@ -13,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function strap()
     {
         Schema::defaultStringLength(191);
     }
