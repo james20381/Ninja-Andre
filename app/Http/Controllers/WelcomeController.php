@@ -12,10 +12,10 @@ class WelcomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    // public function index()
-    // {
-    //     $products = Product::inRandomOrder()->take(9)->get();
-    //
-    //     return view('welcome')->with('products', $products);
-    // }
+    public function index()
+    {
+        $products = Product::inRandomOrder()->take(9)->get();
+
+        return view('welcome')->with('products', $products);
+    }
 }
